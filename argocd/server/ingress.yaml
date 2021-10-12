@@ -13,10 +13,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - argocd.elgallonegroec.com
+    - erp.elgallonegroec.com
     secretName: argocd-secret
   rules:
-  - host: argocd.elgallonegroec.com
+  - host: erp.elgallonegroec.com
     http:
       paths:
       - path: /
