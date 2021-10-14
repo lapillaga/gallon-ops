@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dashboard-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    kubernetes.io/ingress.allow-http: "false"
+    ingress.kubernetes.io/ssl-passthrough: "true"
+  namespace: kubernetes-dashboard
+spec:
+  tls:
+  - hosts:
+    - kdashboard.elgallonegroec.com
+    secretName: gallon-certificate
+  rules:
+  - host: kdashboard.elgallonegroec.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kubernetes-dashboard
+            port:
+              number: 443
