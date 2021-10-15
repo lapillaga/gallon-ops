@@ -15,7 +15,7 @@ spec:
   destination:
     namespace: restaurant-backend
     server: {{ .Values.spec.destination.server }}
-  project: restaurant-backend
+  project: default
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -34,4 +34,4 @@ spec:
   destination:
     namespace: restaurant-backend
     server: {{ .Values.spec.destination.server }}
-  project: restaurant-backend
+  project: default
