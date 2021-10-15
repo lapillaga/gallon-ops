@@ -15,7 +15,7 @@ patchesStrategicMerge:
 
 images:
 - name: ghcr.io/lapillaga
-  newTag: latest
+  newTag: 8d0598eac823ca0b59da3c391bc514789da713a3
 
 resources:
 - ../base
