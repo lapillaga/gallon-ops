@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restaurant-backend-deployment
+  labels:
+    app: restaurant-backend
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      run: restaurant-backend
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        run: restaurant-backend
+    spec:
+      containers:
+        - name: restaurant-backend
+          image: ghcr.io/lapillaga:latest
+          resources: {}
+          ports:
+            - containerPort: 8080
+          lifecycle:
+            preStop:
+              exec:
+                command: ["sh", "-c", "sleep 10"]
+status: {}

@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: salud-ws-deployment
+  labels:
+    environment: prod
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: salud-ws
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: develop

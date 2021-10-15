@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: restaurant-backend-app
+  namespace: argocd
+  labels:
+    environment: prod
+spec:
+  source:
+    path: argocd/restaurant-backend/prod
