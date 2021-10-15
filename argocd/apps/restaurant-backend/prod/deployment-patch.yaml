@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: salud-ws-deployment
+  name: restaurant-backend-deployment
   labels:
     environment: prod
 spec:

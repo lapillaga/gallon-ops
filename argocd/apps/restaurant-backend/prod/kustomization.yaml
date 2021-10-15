@@ -12,7 +12,6 @@ configMapGenerator:
 patchesStrategicMerge:
 - ./deployment-patch.yaml
 - ./ingress-patch.yaml
-- ./app.yaml
 
 images:
 - name: ghcr.io/lapillaga
