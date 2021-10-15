@@ -9,7 +9,7 @@ spec:
   template:
     spec:
       containers:
-      - name: salud-ws
+      - name: restaurant-backend
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: develop
