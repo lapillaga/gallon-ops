@@ -14,6 +14,8 @@ patchesStrategicMerge:
 - ./ingress-patch.yaml
 
 images:
+- name: ghcr.io/lapillaga
+  newTag: c286c33aa35debcf19d1ba9455d14348e1d1308b
 - name: ghcr.io/lapillaga/restaurant-back
   newTag: 8d0598eac823ca0b59da3c391bc514789da713a3
 
