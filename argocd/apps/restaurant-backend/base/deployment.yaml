@@ -18,10 +18,13 @@ spec:
     spec:
       containers:
         - name: restaurant-backend
-          image: ghcr.io/lapillaga:latest
+          image: ghcr.io/lapillaga/restaurant-back:latest
           resources: {}
           ports:
             - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: main
           lifecycle:
             preStop:
               exec:
