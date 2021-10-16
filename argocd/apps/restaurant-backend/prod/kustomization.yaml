@@ -15,7 +15,7 @@ patchesStrategicMerge:
 
 images:
 - name: ghcr.io/lapillaga/restaurant-back
-  newTag: 831b4320af3b7f21ce4fceb4a7a061c14cde333d
+  newTag: 0b8fe83e4fe84d426085e42b9aa9ba548a43854b
 
 resources:
 - ../base
