@@ -23,5 +23,5 @@ version: 0.1.0
 appVersion: "1.0"
 dependencies:
 - name: mariadb
-  version: 7.3.14
+  version: 10.5.12
   repository: https://charts.bitnami.com/bitnami
