@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mariadb-gallon-app
+  namespace: argocd
+  labels:
+    environment: prod
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  source:
+    path: argocd/apps/mariadb-gallon
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
+  destination:
+    namespace: mariadb-gallon
+    server: {{ .Values.spec.destination.server }}
+  project: default
