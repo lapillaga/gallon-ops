@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: ""
+  storageClass: "local-storage"
 
 ## @section Common parameters
 
@@ -167,7 +167,6 @@ primary:
   ##
   configuration: |-
     [mysqld]
-    character-set-client-handshake=FALSE
     skip-name-resolve
     explicit_defaults_for_timestamp
     basedir=/opt/bitnami/mariadb
@@ -384,7 +383,7 @@ primary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: ""
+    storageClass: "local-storage"
     ## @param primary.persistence.annotations MariaDB primary persistent volume claim annotations
     ##
     annotations: {}
@@ -487,7 +486,6 @@ secondary:
   ##
   configuration: |-
     [mysqld]
-    character-set-client-handshake=FALSE
     skip-name-resolve
     explicit_defaults_for_timestamp
     basedir=/opt/bitnami/mariadb
@@ -698,7 +696,7 @@ secondary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: ""
+    storageClass: "local-storage"
     ## @param secondary.persistence.annotations MariaDB secondary persistent volume claim annotations
     ##
     annotations: {}
