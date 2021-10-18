@@ -409,11 +409,7 @@ primary:
   extraVolumeMounts: []
   ## @param primary.initContainers Add additional init containers for the MariaDB Primary pod(s)
   ##
-  initContainers: [
-    "sh",
-    "-c",
-    "/bin/mkdir -p /bitnami/mariadb/data && /bin/chmod -R 777 /bitnami/mariadb",
-  ]
+  initContainers: []
   ## @param primary.sidecars Add additional sidecar containers for the MariaDB Primary pod(s)
   ##
   sidecars: []
