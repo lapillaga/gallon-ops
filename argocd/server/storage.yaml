@@ -40,7 +40,7 @@ spec:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: mariadb-pvc
+  name: data-mariadb-gallon-app-0
   namespace: mariadb-gallon
 spec:
   storageClassName: ""

@@ -373,7 +373,7 @@ primary:
     ## @param primary.persistence.existingClaim Name of an existing `PersistentVolumeClaim` for MariaDB primary replicas
     ## NOTE: When it's set the rest of persistence parameters are ignored
     ##
-    existingClaim: "mariadb-pvc"
+    existingClaim: "data-mariadb-gallon-app-0"
     ## @param primary.persistence.subPath Subdirectory of the volume to mount at
     ##
     subPath: "/bitnami/mariadb"
