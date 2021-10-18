@@ -376,7 +376,7 @@ primary:
     existingClaim: "mariadb-pvc"
     ## @param primary.persistence.subPath Subdirectory of the volume to mount at
     ##
-    subPath: "/data/mariadb"
+    subPath: "/bitnami/mariadb/data"
     ## @param primary.persistence.storageClass MariaDB primary persistent volume storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
