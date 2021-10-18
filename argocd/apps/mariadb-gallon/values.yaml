@@ -373,10 +373,10 @@ primary:
     ## @param primary.persistence.existingClaim Name of an existing `PersistentVolumeClaim` for MariaDB primary replicas
     ## NOTE: When it's set the rest of persistence parameters are ignored
     ##
-    existingClaim: ""
+    existingClaim: "mariadb-pvc"
     ## @param primary.persistence.subPath Subdirectory of the volume to mount at
     ##
-    subPath: ""
+    subPath: "/data/mariadb"
     ## @param primary.persistence.storageClass MariaDB primary persistent volume storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
