@@ -20,7 +20,7 @@ spec:
     - ReadOnlyMany
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: /bitnami/mariadb
+    path: /mnt/mariadb
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -35,7 +35,7 @@ spec:
     - ReadOnlyMany
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: /bitnami/mariadbslave
+    path: /mnt/mariadbslave
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
