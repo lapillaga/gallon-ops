@@ -376,7 +376,7 @@ primary:
     existingClaim: ""
     ## @param primary.persistence.subPath Subdirectory of the volume to mount at
     ##
-    subPath: "/mnt/data"
+    subPath: ""
     ## @param primary.persistence.storageClass MariaDB primary persistent volume storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -384,7 +384,7 @@ primary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: "local-storage"
+    storageClass: "-"
     ## @param primary.persistence.annotations MariaDB primary persistent volume claim annotations
     ##
     annotations: {}
@@ -698,7 +698,7 @@ secondary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: "local-storage"
+    storageClass: "-"
     ## @param secondary.persistence.annotations MariaDB secondary persistent volume claim annotations
     ##
     annotations: {}
