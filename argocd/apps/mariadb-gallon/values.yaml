@@ -154,7 +154,11 @@ initdbScriptsConfigMap: ""
 primary:
   ## @param primary.command Override default container command on MariaDB Primary container(s) (useful when using custom images)
   ##
-  command: []
+  command: [
+    "sh",
+    "-c",
+    "/bin/mkdir -p /bitnami/mariadb/data && /bin/chmod -R 777 /bitnami/mariadb",
+  ]
   ## @param primary.args Override default container args on MariaDB Primary container(s) (useful when using custom images)
   ##
   args: []
