@@ -373,7 +373,7 @@ primary:
     ## @param primary.persistence.existingClaim Name of an existing `PersistentVolumeClaim` for MariaDB primary replicas
     ## NOTE: When it's set the rest of persistence parameters are ignored
     ##
-    existingClaim: ""
+    existingClaim: "mariadb-gallon-pvc"
     ## @param primary.persistence.subPath Subdirectory of the volume to mount at
     ##
     subPath: ""
@@ -384,7 +384,7 @@ primary:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: "standar"
+    storageClass: "local-storage"
     ## @param primary.persistence.annotations MariaDB primary persistent volume claim annotations
     ##
     annotations: {}
