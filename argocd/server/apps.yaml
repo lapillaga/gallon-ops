@@ -17,7 +17,7 @@ spec:
     automated: null
 ---
 apiVersion: argoproj.io/v1alpha1
-kind: Applications
+kind: Application
 metadata:
   name: gallon-apps
   namespace: argocd
