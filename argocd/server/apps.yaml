@@ -9,9 +9,27 @@ spec:
     namespace: argocd
     server: 'https://kubernetes.default.svc'
   source:
-    path: argocd/apps
+    path: argocd/apps/restaurant
     repoURL: 'https://github.com/lapillaga/gallon-ops.git'
     targetRevision: HEAD
-  project: default
+  project: restaurant
+  syncPolicy:
+    automated: null
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Applications
+metadata:
+  name: gallon-apps
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: argocd
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: argocd/apps/frappe-gallon
+    repoURL: 'https://github.com/lapillaga/gallon-ops.git'
+    targetRevision: HEAD
+  project: gallon
   syncPolicy:
     automated: null

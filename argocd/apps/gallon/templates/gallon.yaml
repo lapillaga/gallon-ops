@@ -9,7 +9,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   source:
-    path: argocd/apps/frappe-gallon
+    path: argocd/apps/gallon/frappe-gallon
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   destination:
