@@ -127,14 +127,14 @@ redisCacheService:
 persistence:
   worker:
     enabled: true
-    existingClaim: ""
+    # existingClaim: ""
     size: 8Gi
     storageClass: rook-ceph-block
   logs:
     enabled: true
-    existingClaim: ""
+    # existingClaim: ""
     size: 8Gi
-    storageClass: rook-ceph-block
+    # storageClass: rook-ceph-block
 
 volumePermissions:
   enabled: false
