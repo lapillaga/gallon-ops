@@ -306,7 +306,7 @@ primary:
   ##
   livenessProbe:
     enabled: true
-    initialDelaySeconds: 120
+    initialDelaySeconds: 220
     periodSeconds: 10
     timeoutSeconds: 1
     failureThreshold: 3
@@ -322,7 +322,7 @@ primary:
   ##
   readinessProbe:
     enabled: true
-    initialDelaySeconds: 30
+    initialDelaySeconds: 230
     periodSeconds: 10
     timeoutSeconds: 1
     failureThreshold: 3
