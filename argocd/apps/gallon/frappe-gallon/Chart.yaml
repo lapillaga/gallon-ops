@@ -24,4 +24,4 @@ appVersion: "1.0"
 dependencies:
 - name: frappe-bench-0001
   version: 3.2.31
-  repository: https://helm.erpnext.com/frappe
+  repository: https://helm.erpnext.com/erpnext
