@@ -5,3 +5,4 @@ kubectl apply -f cluster.yaml
 kubectl apply -f storageclass.yaml
 
 https://platform9.com/learn/v1.0/tutorials/rook-using-ceph-csi
+Cluster must be test if have <3 nodos
