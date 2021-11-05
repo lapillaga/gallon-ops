@@ -22,6 +22,6 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: "1.0"
 dependencies:
-- name: frappe/erpnext
+- name: erpnext
   version: 3.2.31
   repository: https://helm.erpnext.com
