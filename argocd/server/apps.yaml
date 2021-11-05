@@ -27,7 +27,7 @@ spec:
     namespace: argocd
     server: 'https://kubernetes.default.svc'
   source:
-    path: argocd/apps/frappe-gallon
+    path: argocd/apps/gallon
     repoURL: 'https://github.com/lapillaga/gallon-ops.git'
     targetRevision: HEAD
   project: default
