@@ -12,7 +12,7 @@ spec:
     path: argocd/apps/restaurant
     repoURL: 'https://github.com/lapillaga/gallon-ops.git'
     targetRevision: HEAD
-  project: restaurant
+  project: default
   syncPolicy:
     automated: null
 ---
@@ -30,6 +30,6 @@ spec:
     path: argocd/apps/frappe-gallon
     repoURL: 'https://github.com/lapillaga/gallon-ops.git'
     targetRevision: HEAD
-  project: gallon
+  project: default
   syncPolicy:
     automated: null
