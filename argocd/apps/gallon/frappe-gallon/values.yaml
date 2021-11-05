@@ -129,12 +129,12 @@ persistence:
     enabled: true
     # existingClaim: ""
     size: 8Gi
-    storageClass: "rook-ceph-block"
+    storageClass: "example-nfs"
   logs:
     enabled: true
     # existingClaim: ""
     size: 8Gi
-    storageClass: "rook-ceph-block"
+    storageClass: "example-nfs"
 
 volumePermissions:
   enabled: false

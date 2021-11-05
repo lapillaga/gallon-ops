@@ -4,3 +4,4 @@ $ NAMESPACE=`kubectl config get-contexts | grep '^*' | tr -s ' ' | cut -d' ' -f5
 $ sed -i'' "s/namespace:.*/namespace: $NAMESPACE/g" ./deploy/kubernetes/rbac.yaml
 $ kubectl create -f deploy/kubernetes/rbac.yaml
 $ kubectl create -f deploy/kubernetes/deployment.yaml
+kubectl create -f deploy/kubernetes/class.yaml
